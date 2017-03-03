@@ -1,0 +1,15 @@
+[2017-03-02 13:12:47,972] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_bash_operator.py
+[2017-03-02 13:12:48,561] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_bash_operator.py
+[2017-03-02 13:12:48,646] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 1
+--------------------------------------------------------------------------------
+
+[2017-03-02 13:12:48,656] {models.py:1219} INFO - Executing <Task(BashOperator): runme_2> on 2017-02-20 00:00:00
+[2017-03-02 13:12:48,666] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-02 13:12:48,667] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmp9jtIKg//tmp/airflowtmp9jtIKg/runme_2ZwNXmW
+[2017-03-02 13:12:48,667] {bash_operator.py:65} INFO - Running command: echo "example_bash_operator__runme_2__20170220" && sleep 1
+[2017-03-02 13:12:48,671] {bash_operator.py:73} INFO - Output:
+[2017-03-02 13:12:48,672] {bash_operator.py:77} INFO - example_bash_operator__runme_2__20170220
+[2017-03-02 13:12:49,673] {bash_operator.py:80} INFO - Command exited with return code 0

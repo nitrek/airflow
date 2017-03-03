@@ -1,0 +1,9 @@
+[2017-03-02 11:38:37,225] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_xcom.py
+[2017-03-02 11:38:37,800] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_xcom.py
+[2017-03-02 11:38:37,889] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 1
+--------------------------------------------------------------------------------
+
+[2017-03-02 11:38:37,899] {models.py:1219} INFO - Executing <Task(PythonOperator): puller> on 2017-03-02 11:37:38.773249
+[2017-03-02 11:38:37,911] {python_operator.py:67} INFO - Done. Returned value was: None

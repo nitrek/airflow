@@ -1,0 +1,18 @@
+[2017-03-01 10:22:57,626] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags
+[2017-03-01 10:22:57,779] {base_executor.py:36} INFO - Adding to queue: airflow run tutorial print_date 2015-01-01T00:00:00 --local -sd DAGS_FOLDER/example_dags/tutorial.py 
+[2017-03-01 10:22:57,803] {sequential_executor.py:26} INFO - Executing command: airflow run tutorial print_date 2015-01-01T00:00:00 --local -sd DAGS_FOLDER/example_dags/tutorial.py 
+[2017-03-01 10:22:58,596] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/tutorial.py
+[2017-03-01 10:22:59,393] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/tutorial.py
+[2017-03-01 10:22:59,486] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-01 10:22:59,497] {models.py:1219} INFO - Executing <Task(BashOperator): print_date> on 2015-01-01 00:00:00
+[2017-03-01 10:22:59,507] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-01 10:22:59,508] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmptZ9DrN//tmp/airflowtmptZ9DrN/print_dateypbhQT
+[2017-03-01 10:22:59,509] {bash_operator.py:65} INFO - Running command: date
+[2017-03-01 10:22:59,513] {bash_operator.py:73} INFO - Output:
+[2017-03-01 10:22:59,514] {bash_operator.py:77} INFO - Wed Mar  1 10:22:59 UTC 2017
+[2017-03-01 10:22:59,514] {bash_operator.py:80} INFO - Command exited with return code 0

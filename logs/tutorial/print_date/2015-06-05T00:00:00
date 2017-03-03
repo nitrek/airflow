@@ -1,0 +1,15 @@
+[2017-03-01 10:10:20,546] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/tutorial.py
+[2017-03-01 10:10:21,405] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/tutorial.py
+[2017-03-01 10:10:21,520] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-01 10:10:21,532] {models.py:1219} INFO - Executing <Task(BashOperator): print_date> on 2015-06-05 00:00:00
+[2017-03-01 10:10:21,543] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-01 10:10:21,544] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpvkfUxU//tmp/airflowtmpvkfUxU/print_dateIUv6wX
+[2017-03-01 10:10:21,544] {bash_operator.py:65} INFO - Running command: date
+[2017-03-01 10:10:21,546] {bash_operator.py:73} INFO - Output:
+[2017-03-01 10:10:21,548] {bash_operator.py:77} INFO - Wed Mar  1 10:10:21 UTC 2017
+[2017-03-01 10:10:21,548] {bash_operator.py:80} INFO - Command exited with return code 0

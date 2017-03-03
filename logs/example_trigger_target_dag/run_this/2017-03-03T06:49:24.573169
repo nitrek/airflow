@@ -1,0 +1,21 @@
+[2017-03-03 06:53:42,892] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_trigger_target_dag.py
+[2017-03-03 06:53:43,768] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_trigger_target_dag.py
+[2017-03-03 06:54:50,518] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_trigger_target_dag.py
+[2017-03-03 06:54:51,388] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_trigger_target_dag.py
+[2017-03-03 06:54:51,505] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 1
+--------------------------------------------------------------------------------
+
+[2017-03-03 06:54:51,519] {models.py:1219} INFO - Executing <Task(PythonOperator): run_this> on 2017-03-03 06:49:24.573169
+[2017-03-03 06:54:51,530] {models.py:1286} ERROR - 'message'
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 66, in execute
+    return_value = self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/example_dags/example_trigger_target_dag.py", line 37, in run_this_func
+    print("Remotely received value of {} for key=message".format(kwargs['dag_run'].conf['message']))
+KeyError: 'message'
+[2017-03-03 06:54:51,537] {models.py:1306} INFO - Marking task as FAILED.
+[2017-03-03 06:54:51,552] {models.py:1327} ERROR - 'message'

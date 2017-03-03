@@ -1,0 +1,8 @@
+[2017-03-02 13:13:10,924] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_bash_operator.py
+[2017-03-02 13:13:11,569] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_bash_operator.py
+[2017-03-02 13:13:11,661] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 1
+--------------------------------------------------------------------------------
+
+[2017-03-02 13:13:11,671] {models.py:1219} INFO - Executing <Task(DummyOperator): run_this_last> on 2017-02-19 00:00:00

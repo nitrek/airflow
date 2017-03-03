@@ -1,0 +1,184 @@
+[2017-03-03 06:55:09,544] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:55:10,629] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:55:10,857] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 4
+--------------------------------------------------------------------------------
+
+[2017-03-03 06:55:10,877] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-03-03 06:50:53.950893
+[2017-03-03 06:55:10,891] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-03 06:55:10,893] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmp_4pjfr//tmp/airflowtmp_4pjfr/task_4qEldwi
+[2017-03-03 06:55:10,893] {bash_operator.py:65} INFO - Running command: bash /home/lavanya181194/airflow/dags/tryy.sh 
+[2017-03-03 06:55:10,897] {bash_operator.py:73} INFO - Output:
+[2017-03-03 06:55:10,899] {bash_operator.py:77} INFO - bash: /home/lavanya181194/airflow/dags/tryy.sh: No such file or directory
+[2017-03-03 06:55:10,900] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-03 06:55:10,900] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-03 06:55:10,902] {models.py:1298} INFO - Marking task as UP_FOR_RETRY
+[2017-03-03 06:55:10,906] {models.py:1311} ERROR - Failed to send email to: ['airflow@mailinator@gmail.com']
+[2017-03-03 06:55:10,906] {models.py:1312} ERROR - [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1300, in handle_failure
+    self.email_alert(error, is_retry=True)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1425, in email_alert
+    send_email(task.email, title, body)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 43, in send_email
+    return backend(to, subject, html_content, files=files, dryrun=dryrun)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 79, in send_email_smtp
+    send_MIME_email(SMTP_MAIL_FROM, to, msg, dryrun)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 91, in send_MIME_email
+    s = smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) if SMTP_SSL else smtplib.SMTP(SMTP_HOST, SMTP_PORT)
+  File "/usr/lib/python2.7/smtplib.py", line 256, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python2.7/smtplib.py", line 316, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 291, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[2017-03-03 06:55:10,928] {models.py:1327} ERROR - Bash command failed
+[2017-03-03 06:56:15,405] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:56:15,961] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:56:16,049] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 2 of 4
+--------------------------------------------------------------------------------
+
+[2017-03-03 06:56:16,061] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-03-03 06:50:53.950893
+[2017-03-03 06:56:16,070] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-03 06:56:16,071] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpRKYcHU//tmp/airflowtmpRKYcHU/task_4kotl25
+[2017-03-03 06:56:16,071] {bash_operator.py:65} INFO - Running command: bash /home/lavanya181194/airflow/dags/tryy.sh 
+[2017-03-03 06:56:16,073] {bash_operator.py:73} INFO - Output:
+[2017-03-03 06:56:16,075] {bash_operator.py:77} INFO - bash: /home/lavanya181194/airflow/dags/tryy.sh: No such file or directory
+[2017-03-03 06:56:16,075] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-03 06:56:16,075] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-03 06:56:16,076] {models.py:1298} INFO - Marking task as UP_FOR_RETRY
+[2017-03-03 06:56:16,078] {models.py:1311} ERROR - Failed to send email to: ['airflow@mailinator@gmail.com']
+[2017-03-03 06:56:16,078] {models.py:1312} ERROR - [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1300, in handle_failure
+    self.email_alert(error, is_retry=True)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1425, in email_alert
+    send_email(task.email, title, body)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 43, in send_email
+    return backend(to, subject, html_content, files=files, dryrun=dryrun)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 79, in send_email_smtp
+    send_MIME_email(SMTP_MAIL_FROM, to, msg, dryrun)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 91, in send_MIME_email
+    s = smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) if SMTP_SSL else smtplib.SMTP(SMTP_HOST, SMTP_PORT)
+  File "/usr/lib/python2.7/smtplib.py", line 256, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python2.7/smtplib.py", line 316, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 291, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[2017-03-03 06:56:16,090] {models.py:1327} ERROR - Bash command failed
+[2017-03-03 06:57:21,210] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:57:21,762] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:57:21,849] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 3 of 4
+--------------------------------------------------------------------------------
+
+[2017-03-03 06:57:21,859] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-03-03 06:50:53.950893
+[2017-03-03 06:57:21,868] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-03 06:57:21,869] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmplCNKum//tmp/airflowtmplCNKum/task_4KEsqih
+[2017-03-03 06:57:21,870] {bash_operator.py:65} INFO - Running command: bash /home/lavanya181194/airflow/dags/tryy.sh 
+[2017-03-03 06:57:21,872] {bash_operator.py:73} INFO - Output:
+[2017-03-03 06:57:21,874] {bash_operator.py:77} INFO - bash: /home/lavanya181194/airflow/dags/tryy.sh: No such file or directory
+[2017-03-03 06:57:21,874] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-03 06:57:21,875] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-03 06:57:21,876] {models.py:1298} INFO - Marking task as UP_FOR_RETRY
+[2017-03-03 06:57:21,878] {models.py:1311} ERROR - Failed to send email to: ['airflow@mailinator@gmail.com']
+[2017-03-03 06:57:21,879] {models.py:1312} ERROR - [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1300, in handle_failure
+    self.email_alert(error, is_retry=True)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1425, in email_alert
+    send_email(task.email, title, body)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 43, in send_email
+    return backend(to, subject, html_content, files=files, dryrun=dryrun)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 79, in send_email_smtp
+    send_MIME_email(SMTP_MAIL_FROM, to, msg, dryrun)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 91, in send_MIME_email
+    s = smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) if SMTP_SSL else smtplib.SMTP(SMTP_HOST, SMTP_PORT)
+  File "/usr/lib/python2.7/smtplib.py", line 256, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python2.7/smtplib.py", line 316, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 291, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[2017-03-03 06:57:21,890] {models.py:1327} ERROR - Bash command failed
+[2017-03-03 06:58:27,059] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:58:27,620] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:58:27,708] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 4 of 4
+--------------------------------------------------------------------------------
+
+[2017-03-03 06:58:27,717] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-03-03 06:50:53.950893
+[2017-03-03 06:58:27,726] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-03 06:58:27,727] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpMCkaM8//tmp/airflowtmpMCkaM8/task_4VLVU8x
+[2017-03-03 06:58:27,727] {bash_operator.py:65} INFO - Running command: bash /home/lavanya181194/airflow/dags/tryy.sh 
+[2017-03-03 06:58:27,729] {bash_operator.py:73} INFO - Output:
+[2017-03-03 06:58:27,731] {bash_operator.py:77} INFO - bash: /home/lavanya181194/airflow/dags/tryy.sh: No such file or directory
+[2017-03-03 06:58:27,731] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-03 06:58:27,731] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-03 06:58:27,732] {models.py:1304} INFO - All retries failed; marking task as FAILED
+[2017-03-03 06:58:27,735] {models.py:1311} ERROR - Failed to send email to: ['airflow@mailinator@gmail.com']
+[2017-03-03 06:58:27,735] {models.py:1312} ERROR - [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1308, in handle_failure
+    self.email_alert(error, is_retry=False)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1425, in email_alert
+    send_email(task.email, title, body)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 43, in send_email
+    return backend(to, subject, html_content, files=files, dryrun=dryrun)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 79, in send_email_smtp
+    send_MIME_email(SMTP_MAIL_FROM, to, msg, dryrun)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/utils/email.py", line 91, in send_MIME_email
+    s = smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) if SMTP_SSL else smtplib.SMTP(SMTP_HOST, SMTP_PORT)
+  File "/usr/lib/python2.7/smtplib.py", line 256, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python2.7/smtplib.py", line 316, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 291, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[2017-03-03 06:58:27,744] {models.py:1327} ERROR - Bash command failed

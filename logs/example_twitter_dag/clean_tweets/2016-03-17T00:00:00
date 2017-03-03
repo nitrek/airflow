@@ -1,0 +1,9 @@
+[2017-03-02 07:40:13,674] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_twitter_dag.py
+[2017-03-02 07:40:14,242] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_twitter_dag.py
+[2017-03-02 07:40:14,331] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-02 07:40:14,343] {models.py:1219} INFO - Executing <Task(PythonOperator): clean_tweets> on 2016-03-17 00:00:00
+[2017-03-02 07:40:14,348] {python_operator.py:67} INFO - Done. Returned value was: None

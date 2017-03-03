@@ -1,0 +1,15 @@
+[2017-03-02 06:33:43,979] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-02 06:33:44,547] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-02 06:33:44,634] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-02 06:33:44,644] {models.py:1219} INFO - Executing <Task(BashOperator): task_1> on 2017-03-02 06:25:00
+[2017-03-02 06:33:44,653] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-02 06:33:44,654] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpaGFLGW//tmp/airflowtmpaGFLGW/task_1asrMWr
+[2017-03-02 06:33:44,654] {bash_operator.py:65} INFO - Running command: echo "Hello World from Task 1"
+[2017-03-02 06:33:44,656] {bash_operator.py:73} INFO - Output:
+[2017-03-02 06:33:44,657] {bash_operator.py:77} INFO - Hello World from Task 1
+[2017-03-02 06:33:44,657] {bash_operator.py:80} INFO - Command exited with return code 0

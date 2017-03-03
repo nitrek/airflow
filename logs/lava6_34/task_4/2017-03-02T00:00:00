@@ -1,0 +1,63 @@
+[2017-03-03 06:12:44,341] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:12:44,885] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:12:44,970] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-03 06:12:44,979] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-03-02 00:00:00
+[2017-03-03 06:12:44,990] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-03 06:12:44,991] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpbZ_RWk//tmp/airflowtmpbZ_RWk/task_4QBYSMX
+[2017-03-03 06:12:44,991] {bash_operator.py:65} INFO - Running command: bash try.sh 
+[2017-03-03 06:12:44,994] {bash_operator.py:73} INFO - Output:
+[2017-03-03 06:12:44,995] {bash_operator.py:77} INFO - bash: try.sh: No such file or directory
+[2017-03-03 06:12:44,996] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-03 06:12:44,996] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-03 06:12:45,000] {models.py:1298} INFO - Marking task as UP_FOR_RETRY
+[2017-03-03 06:12:45,009] {models.py:1327} ERROR - Bash command failed
+[2017-03-03 06:15:17,026] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:15:17,611] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:15:17,703] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 2 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-03 06:15:17,713] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-03-02 00:00:00
+[2017-03-03 06:15:17,726] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-03 06:15:17,727] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmp_QqyZb//tmp/airflowtmp_QqyZb/task_4Gc6uCa
+[2017-03-03 06:15:17,727] {bash_operator.py:65} INFO - Running command: bash /home/lavanya181194/airflow/dags/try.sh 
+[2017-03-03 06:15:17,730] {bash_operator.py:73} INFO - Output:
+[2017-03-03 06:15:17,732] {bash_operator.py:77} INFO - bash: /home/lavanya181194/airflow/dags/try.sh: No such file or directory
+[2017-03-03 06:15:17,732] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-03 06:15:17,732] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-03 06:15:17,734] {models.py:1304} INFO - All retries failed; marking task as FAILED
+[2017-03-03 06:15:17,744] {models.py:1327} ERROR - Bash command failed
+[2017-03-03 06:28:59,932] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:29:00,494] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-03 06:29:00,580] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-03 06:29:00,591] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-03-02 00:00:00
+[2017-03-03 06:29:00,599] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-03 06:29:00,600] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpI2sUM9//tmp/airflowtmpI2sUM9/task_4AcCqaQ
+[2017-03-03 06:29:00,600] {bash_operator.py:65} INFO - Running command: bash /home/lavanya181194/airflow/dags/try.sh 
+[2017-03-03 06:29:00,604] {bash_operator.py:73} INFO - Output:
+[2017-03-03 06:29:00,605] {bash_operator.py:77} INFO - running shell script
+[2017-03-03 06:29:00,606] {bash_operator.py:80} INFO - Command exited with return code 0

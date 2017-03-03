@@ -1,0 +1,48 @@
+[2017-03-02 07:38:23,858] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_twitter_dag.py
+[2017-03-02 07:38:24,439] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_twitter_dag.py
+[2017-03-02 07:38:24,531] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-02 07:38:24,543] {models.py:1219} INFO - Executing <Task(BashOperator): put_fromTwitter_B_to_hdfs> on 2016-03-13 00:00:00
+[2017-03-02 07:38:24,553] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-02 07:38:24,554] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmptNWs9M//tmp/airflowtmptNWs9M/put_fromTwitter_B_to_hdfs43TlH5
+[2017-03-02 07:38:24,554] {bash_operator.py:65} INFO - Running command: HADOOP_USER_NAME=hdfs hadoop fs -put -f /tmp/from_fromTwitter_B_2017-03-01.csv /tmp/fromTwitter_B/
+[2017-03-02 07:38:24,557] {bash_operator.py:73} INFO - Output:
+[2017-03-02 07:38:24,558] {bash_operator.py:77} INFO - /tmp/airflowtmptNWs9M/put_fromTwitter_B_to_hdfs43TlH5: line 1: hadoop: command not found
+[2017-03-02 07:38:24,558] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-02 07:38:24,558] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-02 07:38:24,560] {models.py:1298} INFO - Marking task as UP_FOR_RETRY
+[2017-03-02 07:38:24,568] {models.py:1327} ERROR - Bash command failed
+[2017-03-02 11:52:11,282] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_twitter_dag.py
+[2017-03-02 11:52:11,886] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/example_dags/example_twitter_dag.py
+[2017-03-02 11:52:11,976] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 2 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-02 11:52:11,987] {models.py:1219} INFO - Executing <Task(BashOperator): put_fromTwitter_B_to_hdfs> on 2016-03-13 00:00:00
+[2017-03-02 11:52:11,997] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-02 11:52:11,998] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpXzZuFr//tmp/airflowtmpXzZuFr/put_fromTwitter_B_to_hdfs8EC0MR
+[2017-03-02 11:52:11,998] {bash_operator.py:65} INFO - Running command: HADOOP_USER_NAME=hdfs hadoop fs -put -f /tmp/from_fromTwitter_B_2017-03-01.csv /tmp/fromTwitter_B/
+[2017-03-02 11:52:12,001] {bash_operator.py:73} INFO - Output:
+[2017-03-02 11:52:12,002] {bash_operator.py:77} INFO - /tmp/airflowtmpXzZuFr/put_fromTwitter_B_to_hdfs8EC0MR: line 1: hadoop: command not found
+[2017-03-02 11:52:12,002] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-02 11:52:12,002] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-02 11:52:12,004] {models.py:1304} INFO - All retries failed; marking task as FAILED
+[2017-03-02 11:52:12,013] {models.py:1327} ERROR - Bash command failed

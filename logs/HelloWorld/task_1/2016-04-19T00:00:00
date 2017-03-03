@@ -1,0 +1,23 @@
+[2017-03-02 06:52:49,793] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-02 06:52:49,856] {models.py:1750} WARNING - schedule_interval is used for <Task(BashOperator): task_1>, though it has been deprecated as a task parameter, you need to specify it as a DAG parameter instead
+[2017-03-02 06:52:49,856] {models.py:1750} WARNING - schedule_interval is used for <Task(BashOperator): task_2>, though it has been deprecated as a task parameter, you need to specify it as a DAG parameter instead
+[2017-03-02 06:52:49,857] {models.py:1750} WARNING - schedule_interval is used for <Task(BashOperator): task_3>, though it has been deprecated as a task parameter, you need to specify it as a DAG parameter instead
+[2017-03-02 06:52:49,858] {models.py:1750} WARNING - schedule_interval is used for <Task(BashOperator): task_4>, though it has been deprecated as a task parameter, you need to specify it as a DAG parameter instead
+[2017-03-02 06:52:50,406] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-02 06:52:50,466] {models.py:1750} WARNING - schedule_interval is used for <Task(BashOperator): task_1>, though it has been deprecated as a task parameter, you need to specify it as a DAG parameter instead
+[2017-03-02 06:52:50,466] {models.py:1750} WARNING - schedule_interval is used for <Task(BashOperator): task_2>, though it has been deprecated as a task parameter, you need to specify it as a DAG parameter instead
+[2017-03-02 06:52:50,467] {models.py:1750} WARNING - schedule_interval is used for <Task(BashOperator): task_3>, though it has been deprecated as a task parameter, you need to specify it as a DAG parameter instead
+[2017-03-02 06:52:50,468] {models.py:1750} WARNING - schedule_interval is used for <Task(BashOperator): task_4>, though it has been deprecated as a task parameter, you need to specify it as a DAG parameter instead
+[2017-03-02 06:52:50,491] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-02 06:52:50,500] {models.py:1219} INFO - Executing <Task(BashOperator): task_1> on 2016-04-19 00:00:00
+[2017-03-02 06:52:50,510] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-02 06:52:50,511] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpvJHfxs//tmp/airflowtmpvJHfxs/task_1Rza9YP
+[2017-03-02 06:52:50,511] {bash_operator.py:65} INFO - Running command: echo "Hello World from Task 1"
+[2017-03-02 06:52:50,513] {bash_operator.py:73} INFO - Output:
+[2017-03-02 06:52:50,514] {bash_operator.py:77} INFO - Hello World from Task 1
+[2017-03-02 06:52:50,514] {bash_operator.py:80} INFO - Command exited with return code 0

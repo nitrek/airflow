@@ -1,0 +1,48 @@
+[2017-03-02 12:49:10,898] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-02 12:49:11,467] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-02 12:49:11,558] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-02 12:49:11,569] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-02-27 06:25:00
+[2017-03-02 12:49:11,578] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-02 12:49:11,579] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpzx5VL3//tmp/airflowtmpzx5VL3/task_4_Jj8A3
+[2017-03-02 12:49:11,579] {bash_operator.py:65} INFO - Running command: bash try.sh 
+[2017-03-02 12:49:11,582] {bash_operator.py:73} INFO - Output:
+[2017-03-02 12:49:11,584] {bash_operator.py:77} INFO - bash: try.sh: No such file or directory
+[2017-03-02 12:49:11,584] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-02 12:49:11,584] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-02 12:49:11,585] {models.py:1298} INFO - Marking task as UP_FOR_RETRY
+[2017-03-02 12:49:11,595] {models.py:1327} ERROR - Bash command failed
+[2017-03-02 12:50:15,572] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-02 12:50:16,149] {models.py:154} INFO - Filling up the DagBag from /home/lavanya181194/airflow/dags/HellowWorld.py
+[2017-03-02 12:50:16,240] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 2 of 2
+--------------------------------------------------------------------------------
+
+[2017-03-02 12:50:16,252] {models.py:1219} INFO - Executing <Task(BashOperator): task_4> on 2017-02-27 06:25:00
+[2017-03-02 12:50:16,261] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-03-02 12:50:16,263] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmplSHa5a//tmp/airflowtmplSHa5a/task_4Xcl6wn
+[2017-03-02 12:50:16,263] {bash_operator.py:65} INFO - Running command: bash try.sh 
+[2017-03-02 12:50:16,266] {bash_operator.py:73} INFO - Output:
+[2017-03-02 12:50:16,268] {bash_operator.py:77} INFO - bash: try.sh: No such file or directory
+[2017-03-02 12:50:16,268] {bash_operator.py:80} INFO - Command exited with return code 127
+[2017-03-02 12:50:16,269] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/lavanya181194/.local/lib/python2.7/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+AirflowException: Bash command failed
+[2017-03-02 12:50:16,270] {models.py:1304} INFO - All retries failed; marking task as FAILED
+[2017-03-02 12:50:16,279] {models.py:1327} ERROR - Bash command failed
