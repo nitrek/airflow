@@ -37,8 +37,7 @@ url_dict = dict(
     TASK_STATE_URL="/api/v1.0/task_state",
     TRIGGER_DAG_URL="/api/v1.0/trigger_dag",
     REFRESH_DAG_URL="/api/v1.0/refresh_dag",
-    DEPLOY_DAG_URL="/api/v1.0/deploy_dag",
-    DEPLOY1_DAG_URL="/api/v1.0/deploy1_dag"
+    DEPLOY_DAG_URL="/api/v1.0/deploy_dag"
 )
 
 airflow_webserver_base_url = configuration.get('webserver', 'BASE_URL')
